@@ -1,65 +1,34 @@
 body {
-  background-color: #1f1b24;
-  color: #e0ffe0;
-  font-family: Georgia, serif;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 30px;
-  background-color: #2e2a38;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(152, 251, 152, 0.2);
-}
-
-h1 {
+  background-color: #2e1a47; /* violet închis */
+  color: #d0f0c0; /* verde pal */
+  font-family: 'Georgia', serif;
   text-align: center;
-  color: #c9a9ff;
-}
-
-.lang-select {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.lang-select button {
-  margin: 0 10px;
-  background-color: #98fb98;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-weight: bold;
+  padding: 50px;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-input {
-  padding: 8px;
-  border: none;
-  border-radius: 5px;
-}
-
-button[type="submit"] {
-  background-color: #c9a9ff;
-  color: #1f1b24;
-  padding: 10px;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-}
-
-.results {
-  margin-top: 30px;
-  background-color: #383049;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+input, select {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #d0f0c0;
+  color: #2e1a47;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b0d0a0;
 }
