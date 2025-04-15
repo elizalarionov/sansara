@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sansara</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Sansara</h1>
+    <p>Alege limba:</p>
+    <div class="lang-select">
+      <button onclick="setLanguage('ro')">Română</button>
+      <button onclick="setLanguage('ru')">Русский</button>
+      <button onclick="setLanguage('en')">English</button>
+    </div>
+
+    <form id="dateForm">
+      <label for="day">Ziua:</label>
+      <input type="number" id="day" min="1" max="31" required />
+
+      <label for="month">Luna:</label>
+      <input type="number" id="month" min="1" max="12" required />
+
+      <label for="year">Anul:</label>
+      <input type="number" id="year" min="1000" max="2100" required />
+
+      <button type="submit">Află ce s-a întâmplat</button>
+    </form>
+
+    <div id="results" class="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
